@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+:root {
+    --bg-color: #f0f4f5;
+    --btn-bg-color: #20bc7e;
+    --primary-txt-color : #000;
+    --sec-txt-color: #fff;
+}
+body {
+    background-color: var(--bg-color);
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-weight: 600;
+}
+li {
+    list-style: none;
+    transition: all 0.3s ease;
+}
+li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px;
+    padding: 5px;
+    border-radius: 9px;
+}
+a {
+    text-decoration: none;
+    color: var(--primary-txt-color);
+}
+img {
+    width: 150px;
+    margin-right: 100px;
+}
+
+/* main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20vw;
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+#heading {
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3)
+}
+label {
+    font-weight: 600;
+}
+input {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+textarea {
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.submit {
+    background-color: var(--btn-bg-color);
+    border-radius: 7px;
+    font-size: large;
+    font-weight: 600;
+    color: var(--sec-txt-color);
+    transition: all ease 0.3s;
+}
+.submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px 5px rgb(128, 128, 128,0.5);
+    color: greenyellow;
+    background-color: orange;
+}

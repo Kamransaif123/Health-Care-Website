@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+:root {
+    --primary-bg-color: #f0f4f5;
+    --btn-bg-color: #20bc7e;
+    --primary-txt-color: #000;
+    --secondary-txt-color: #7c7c7c;
+    --btn-txt-color: #fff;
+}
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
+    padding-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: var(--primary-txt-color);
+}
+
+li {
+    list-style: none;
+    transition: all 0.3s ease;
+}
+li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+}
+.bold-font {
+    font-weight: 600;
+}
+
+
+/* navbar */
+nav {
+    justify-content: space-around;
+}
+ul {
+    gap: 30px;
+    align-items: center;
+}
+.logo img {
+    width: 50%;
+    margin-right: 100px;
+}
+
+/* main-section */
+.background-img img{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 43%;
+}
+/* hero-section */
+.hero-section {
+    justify-content: space-between;
+    height: max-content;
+    margin-top: 100px;
+}
+h1 {
+    font-size: 3rem;
+    /* font-weight: 700; */
+}
+.left {
+    width: 40%;
+    position: relative;
+    left: 150px;
+}
+.left p {
+    margin: 20px 0;
+}
+button {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-txt-color);
+    font-size: large;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    transition: all ease 0.3s ;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    color: blue;
+}
+.left > img:first-child {
+    width: 20px;
+}
+.left > img:nth-child(5) {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 20px;
+}
+.mouse {
+    position: absolute;
+    right: -30px;
+    bottom: -20px;
+
+}
+.right {
+    position: relative;
+    width: 30%;
+}
+.right img:nth-child(1) {
+    position: absolute;
+    bottom: -70px;
+    right: 5px;
+    z-index: -1;
+    width: 90%;
+}
+.right img:nth-child(2) {
+    position: absolute;
+    bottom: -85px;
+    right: 0;
+    width: 90%;
+    z-index: -2;
+}
+.right img:nth-child(3) {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 105%;
+}
